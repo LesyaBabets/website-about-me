@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, :active {outline: none;}
+
+nav, footer, header, article, aside, main{display: block;}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {font-family: inherit;}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
+
+body {
+    font-family: Verdana, Geneva, Tahoma;
+    font-style: italic;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 2px #fff;
+}
+
+.header, .footer {
+    background: linear-gradient(to top left, powderblue, pink);
+    padding: 29px 245px;
+    background-position: center center;
+    position: relative;
+    z-index: 0;
+    box-shadow: 1px 1px 200px #cd2a2a;
+    
+    
+}
+
+.header-nav-ul, .header-article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+ul.header-nav-ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.header-nav-ul li a{
+    color: #f0f1fb;
+    text-shadow: 0 0 10px rgb(34, 3, 54);
+}
+
+.foto {
+    height: 500px;
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px palevioletred;
+}
+
+.header-article-h1 {
+    font-weight: normal;
+    font-size: clamp(5rem, 15vw, 9rem);
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.main {
+    padding: 29px 10%;
+    margin: auto;
+    text-shadow: 0 0 10px rgb(34, 10, 54);
+    background: linear-gradient(#0000ff69, 50%, pink);
+    
+    line-height: 1.25;
+    text-align: justify;
+}
+
+.h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.main-about-me, .main-hobby, .article-question {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.main-about-me, .hobby-text, .article-question {
+    text-indent: 2em;
+}
+
+.main-about-me, .article-question {
+    background: linear-gradient(to top left, powderblue, pink);
+    box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7),
+            1px 2px 4px 0px rgba(0,255,255,0.7),
+            2px 4px 8px 0px rgba(0,255,255,0.7),
+            2px 4px 16px 0px rgba(0,255,255,0.7);
+}
+
+.main-hobby {
+    background: linear-gradient(to top left, powderblue, pink);
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+}
+
+.article-hobby-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hoby-img:nth-child(n+3) {
+    border-top: 3px solid #d9dbf5;
+}
+.hoby-img:nth-of-type(even) {
+    background-color: #f0f1fb;
+}
+
+
+.imgs {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(154, 80, 210);
+}
+
+.hobby-text, .article-hobby-img {
+    padding-bottom: 20px;
+}
+
+.footer-icon {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon a img {
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    
+}
